@@ -9,5 +9,21 @@
 </head>
 <body>
 
+  <div id="app"></div>
+
+  <script>
+    class App extends React.Component {
+      render() {
+        return (
+          <div className="app-content">
+            <h1>Hello World!</h1>
+          </div>
+        )
+      }
+    }
+
+    ReactDom.render(<App />, document.getElementById('app'))
+  </script>
+
 </body>
 </html>
