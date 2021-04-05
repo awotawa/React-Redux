@@ -18,13 +18,13 @@
         name: 'Alex',
         age: 24
       }
-      handleClick(event){
+      handleClick = (event) => {
+        console.log(this.state);
+      }
+      handleMouseOver = (event) => {
         console.log(event.target);
       }
-      handleMouseOver(event){
-        console.log(event.target);
-      }
-      handleCopy(event){
+      handleCopy = (event) => {
         console.log('Try being original for once!');
       }
       render() {
