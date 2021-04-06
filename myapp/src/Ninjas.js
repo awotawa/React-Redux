@@ -1,18 +1,27 @@
 import React from 'react';
 
 const Ninjas = ({ninjas}) => { // direct destructuring
+  // const ninjaList = ninjas.map(ninja => {
+  //   if (ninja.age > 20){
+  //     return(
+  //     <div className="ninja" key={ninja.id}>
+  //       <div>Name: { ninja.name }</div>
+  //       <div>Age: { ninja.age }</div>
+  //       <div>Belt: { ninja.belt }</div>
+  //     </div>
+  //     );
+  //   } else {
+  //     return null;
+  //   }
+  // })
   const ninjaList = ninjas.map(ninja => {
-    if (ninja.age > 20){
-      return(
+    return ninja.age > 20 ? (
       <div className="ninja" key={ninja.id}>
         <div>Name: { ninja.name }</div>
         <div>Age: { ninja.age }</div>
         <div>Belt: { ninja.belt }</div>
       </div>
-      );
-    } else {
-      return null;
-    }
+    ) : null;
   })
   return(
     <div className='ninja-list'>
