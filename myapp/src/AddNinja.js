@@ -32,4 +32,4 @@ class AddNinja extends Component{
   }
 }
 
-export AddNinja default;
+export default AddNinja;
